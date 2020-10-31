@@ -26,6 +26,7 @@ class AuthController extends Controller
      */
     public function showRegisterForm()
     {
+        echo "salam";
         return view('auth/register');
     }
 

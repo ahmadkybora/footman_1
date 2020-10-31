@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * Algorithm: ahmad montazeri.
+ * Development: ahmad montazeri.
+ * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+ * Modified At:.
+ *
  * this class for routing
  */
 namespace App\Providers;
@@ -35,6 +40,7 @@ class Route extends Provider
         else
         {
             header($_SERVER['SERVER_PROTOCOL'] . '404 not found');
+            dd($this->uri);
             view('errors/404');
         }
     }

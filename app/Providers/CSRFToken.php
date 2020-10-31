@@ -1,5 +1,10 @@
 <?php
 /**
+ * Algorithm: ahmad montazeri.
+ * Development: ahmad montazeri.
+ * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+ * Modified At:.
+ *
  * this class for make CSRFToken
  */
 
@@ -8,6 +13,11 @@ namespace App\Providers;
 class CSRFToken extends Provider
 {
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * this method for generate Token
      * 
      * @return mixed
@@ -25,6 +35,11 @@ class CSRFToken extends Provider
     }
 
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * this method for verify CSRFToken
      *
      * @param $requestToken

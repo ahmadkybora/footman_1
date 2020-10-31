@@ -1,13 +1,22 @@
 <?php
 /**
- * this class for connection to database
+ * Algorithm: ahmad montazeri.
+ * Development: ahmad montazeri.
+ * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+ * Modified At:.
  *
+ * this class for connection to database
  */
 namespace App\Providers;
 
 use Illuminate\Database\Capsule\Manager as DB;
 
 /**
+ * Algorithm: ahmad montazeri.
+ * Development: ahmad montazeri.
+ * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+ * Modified At:.
+ *
  * this method for config to env file for connection database
  * Class Connection
  * @package App\Providers

@@ -1,9 +1,11 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: kybora
- * Date: 10/30/2020
- * Time: 9:36 PM
+ * Algorithm: ahmad montazeri.
+ * Development: ahmad montazeri.
+ * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+ * Modified At:.
+ *
+ * this class for session
  */
 
 namespace App\Providers;
@@ -11,6 +13,11 @@ namespace App\Providers;
 class Session extends Provider
 {
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * create the session
      *
      * @param $name
@@ -27,6 +34,11 @@ class Session extends Provider
     }
 
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * get value from session
      *
      * @param $name
@@ -38,6 +50,11 @@ class Session extends Provider
     }
 
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * check is session exists
      *
      * @param $name
@@ -53,6 +70,11 @@ class Session extends Provider
     }
 
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * remove the session
      *
      * @param $name

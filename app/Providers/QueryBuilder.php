@@ -1,5 +1,10 @@
 <?php
 /**
+ * Algorithm: ahmad montazeri.
+ * Development: ahmad montazeri.
+ * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+ * Modified At:.
+ *
  * this class for Query Builder
  */
 
@@ -14,6 +19,11 @@ class QueryBuilder extends Provider
     }
 
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * this method for select all from table
      * 
      * @param $table
@@ -27,6 +37,11 @@ class QueryBuilder extends Provider
     }
 
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * this method for find id
      * 
      * @param $table
@@ -41,6 +56,11 @@ class QueryBuilder extends Provider
     }
 
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * this method for conditional to database
      * 
      * @param $table
@@ -56,6 +76,11 @@ class QueryBuilder extends Provider
     }
 
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * this method for insert into data to database
      * @param $table
      * @param $params
@@ -73,6 +98,11 @@ class QueryBuilder extends Provider
     }
 
     /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
      * this method for update data
      *
      * @param $table
@@ -93,6 +123,15 @@ class QueryBuilder extends Provider
         $this->pdo->prepare($sql)->execute($params);
     }
 
+    /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 10/31/2020 15:00 PM by ahmad montazeri
+     * Modified At:.
+     *
+     * @param $table
+     * @param $id
+     */
     public function delete($table, $id)
     {
         $stmt = $this->pdo->prepare("DELETE FROM {$table} WHERE id={$id}");
