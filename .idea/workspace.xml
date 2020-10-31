@@ -5,33 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4440ba17-4f05-4184-8f56-ae445e35b462" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Providers/Middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/ValidateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/View.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Auth/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Functions/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Functions/helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/CSRFToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/CSRFToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/Connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/Provider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/Provider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/QueryBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/QueryBuilder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/Redirect.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/Redirect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/Route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/Session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/front/home.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Functions/helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+            <state relative-caret-position="406">
+              <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
               <folding>
                 <element signature="e#6#47#0#PHP" expanded="true" />
                 <element signature="e#48#70#0#PHP" expanded="true" />
@@ -151,7 +126,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-387" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -225,12 +200,12 @@
       <updated>1604054629632</updated>
       <workItem from="1604054631407" duration="5409000" />
       <workItem from="1604078431885" duration="7915000" />
-      <workItem from="1604141703465" duration="3764000" />
+      <workItem from="1604141703465" duration="5695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17088000" />
+    <option name="totallyTimeSpent" value="19019000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -532,8 +507,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Functions/helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+        <state relative-caret-position="406">
+          <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
           <folding>
             <element signature="e#6#47#0#PHP" expanded="true" />
             <element signature="e#48#70#0#PHP" expanded="true" />

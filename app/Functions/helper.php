@@ -144,8 +144,34 @@ if(! function_exists('verifyCSRFToken'))
      */
     function verifyCSRFToken($requestToken)
     {
-        if(Session::has('token') and Session::get('token') === $requestToken)
+        if(Session::has('token') and Session::get('token') == $requestToken)
             return true;
         return false;
+    }
+}
+
+if(! function_exists('redirectTO'))
+{
+    /**
+     * this methid for redirect to
+     * @param $path
+     */
+    function redirectTo($path)
+    {
+        header("location: $path");
+        exit;
+    }
+}
+
+if(! function_exists('back'))
+{
+    /**
+     * this method for back to page
+     */
+    function back()
+    {
+        $uri = $_SERVER['REQUEST_URI'];
+        header("location: $uri");
+        exit;
     }
 }
