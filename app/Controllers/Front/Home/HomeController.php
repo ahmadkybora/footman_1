@@ -6,6 +6,7 @@
 namespace App\Controllers\Front\Home;
 
 use App\Controllers\Controller;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -14,7 +15,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        echo "ok";
+        $users = User::all();
+        var_dump($users);
         /*return view('front/home/index');*/
     }
 }

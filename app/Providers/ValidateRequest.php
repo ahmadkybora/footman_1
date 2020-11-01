@@ -15,8 +15,63 @@ use Illuminate\Database\Capsule\Manager as DB;
 class ValidateRequest extends Provider
 {
     private static $error = [];
+    private static $error_messages = [
+        'string' => 'The :attribute field cannot contain numbers',
+        'required' => 'The :attribute field is required',
+        'minLength' => 'The :attribute field must be a minimum of :policy characters',
+        'maxLength' => 'The :attribute filed must be a maximum of :policy characters',
+        'mixed' => 'The :attribute filed can contain letters, numbers, dash and space only',
+        'numeric' => 'The :attribute filed cannot contain letters e.g 20.0, 20',
+        'email' => 'Email address is invalid',
+        'unique' => 'The :attribute is already taken, please try another one',
+    ];
 
+    /**
+     * set specific error
+     *
+     * @param $error
+     * @param null $key
+     */
+    private static function setError($error, $key = null)
+    {
+        if($key)
+            self::$error[$key][] = $error;
 
+        self::$error[] = $error;
+    }
+
+    public function abide()
+    {
+        
+    }
+
+    /**
+     * Algorithm: ahmad montazeri.
+     * Development: ahmad montazeri.
+     * Created At: 11/01/2020 09:52 PM by ahmad montazeri
+     * Modified At:.
+     *
+     * perform validation for the data provider and set error messages
+     *
+     * @param array $data
+     */
+    private static function doValidation(array $data)
+    {
+        $column = $data['column'];
+        foreach($data['rules'] as $index => $rule)
+        {
+            $valid = call_user_func_array([self::class, $index], [$column, $data['value'], $rule]);
+            if(!$valid)
+            {
+                self::setError(
+                    str_replace(
+                        [':attribute', ':rule', '_'],
+                        [$column, $rule, ' '],
+                        self::$error_messages[$index]), $column
+                    );
+            }
+        }
+    }
     /**
      * Algorithm: ahmad montazeri.
      * Development: ahmad montazeri.
@@ -50,6 +105,11 @@ class ValidateRequest extends Provider
     //
     // this methods for validation request
     //
+
+    public static function exists($column, $value, $rule)
+    {
+        //
+    }
 
     /**
      * Algorithm: ahmad montazeri.
