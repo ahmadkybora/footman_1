@@ -15,7 +15,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $users = User::all();
+        $users = User::create([
+            'username' => 'ahmad',
+            'first_name' => 'ahmad',
+            'last_name' => 'montazeri',
+        ]);
         var_dump($users);
         /*return view('front/home/index');*/
     }

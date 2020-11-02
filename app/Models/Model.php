@@ -2,7 +2,6 @@
 namespace App\Models;
 
 use App\Providers\App;
-use App\Providers\QueryBuilder;
 
 class Model
 {

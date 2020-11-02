@@ -12,6 +12,7 @@ class App
 
     public static function get($key)
     {
+        var_dump($key);
         return static::$registry[$key];
     }
 }
