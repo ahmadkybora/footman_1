@@ -3,12 +3,27 @@
  * this file for starting app
  */
 
+use App\Providers\App;
+use App\Providers\QueryBuilder;
+use App\Providers\Connection;
 
-/**
- * start session if not already started
- */
+///**
+// * start session if not already started
+// */
 if(!isset($_SESSION))
     session_start();
+
+/**
+ * load environment variable
+ */
+require_once __DIR__.'/../config/database.php';
+
+App::bind('config', require_once __DIR__ . '/../config.php');
+
+App::bind('database', new QueryBuilder(
+    Connection::make(App::get('config')['database'])
+));
+
 
 /**
  * this statement for create database table
@@ -17,14 +32,9 @@ if(!isset($_SESSION))
 //require_once __DIR__ . '/../database/migrations/Create-Users-Table.php';
 
 /**
- * load environment variable
- */
-require_once __DIR__.'/../config/database.php';
-
-/**
  * this instance for connection
  */
-new App\Providers\Connection();
+//new App\Providers\Connection();
 
 /**
  * set custom error handler

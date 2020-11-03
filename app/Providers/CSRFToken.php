@@ -46,7 +46,7 @@ class CSRFToken extends Provider
      * @return bool
      * @throws \Exception
      */
-    public function verifyCSRFToken($requestToken)
+    public static function verifyCSRFToken($requestToken)
     {
         if(Session::has('token') and Session::get('token') === $requestToken)
             return true;

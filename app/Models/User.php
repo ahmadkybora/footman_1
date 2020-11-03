@@ -11,4 +11,10 @@ namespace App\Models;
 class User extends Model
 {
     protected static $table = 'users';
+    protected $user;
+
+    public function __construct($user)
+    {
+        $this->user = $user;
+    }
 }

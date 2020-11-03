@@ -12,21 +12,21 @@ class QueryBuilder
     {
         $stmt = $this->pdo->prepare("select * from {$table}");
         $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_OBJ);
+        return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
 
     public function find($table, $id)
     {
         $stmt = $this->pdo->prepare("SELECT * FROM {$table} WHERE id={$id}");
         $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_OBJ);
+        return $stmt->fetch(\PDO::FETCH_OBJ);
     }
 
     public function where($table, $key, $value)
     {
         $stmt = $this->pdo->prepare("select * from $table where $key= '$value'");
         $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_OBJ);
+        return $stmt->fetch(\PDO::FETCH_OBJ);
     }
 
     public function insert($table, $params)

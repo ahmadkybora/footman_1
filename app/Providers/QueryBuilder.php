@@ -33,7 +33,7 @@ class QueryBuilder extends Provider
     {
         $stmt = $this->pdo->prepare("SELECT * FROM {$table}");
         $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_OBJ);
+        return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
 
     /**
@@ -52,7 +52,7 @@ class QueryBuilder extends Provider
     {
         $stmt = $this->pdo->prepare("SELECT * FROM {$table} WHERE id={$id}");
         $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_OBJ);
+        return $stmt->fetch(\PDO::FETCH_OBJ);
     }
 
     /**
@@ -72,7 +72,7 @@ class QueryBuilder extends Provider
     {
         $stmt = $this->pdo->prepare("SELECT * FROM {$table} WHERE $key=' $value'");
         $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_OBJ);
+        return $stmt->fetch(\PDO::FETCH_OBJ);
     }
 
     /**
@@ -85,7 +85,7 @@ class QueryBuilder extends Provider
      * @param $table
      * @param $params
      */
-    public function save($table, $params)
+    public function insert($table, $params)
     {
         $sql = sprintf(
             'insert into %s (%s) values (%s)',

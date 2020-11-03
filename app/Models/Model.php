@@ -2,38 +2,45 @@
 namespace App\Models;
 
 use App\Providers\App;
+//use App\Providers\Request;
 
 class Model
 {
+//    protected $request;
     protected static $table;
+
+//    public function __construct(Request $request)
+//    {
+//        $this->request = $request;
+//    }
 
     public static function all()
     {
-        return App::get('Providers')->selectAll(static::$table);
+        return App::get('database')->selectAll(static::$table);
     }
 
     public static function create($values)
     {
-        App::get('Providers')->insert(static::$table, $values);
+        App::get('database')->insert(static::$table, $values);
     }
 
     public static function find($id)
     {
-        return App::get('Providers')->find(static::$table, $id);
+        return App::get('database')->find(static::$table, $id);
     }
 
     public static function where($key, $value)
     {
-        return App::get('Providers')->where(static::$table, $key, $value);
+        return App::get('database')->where(static::$table, $key, $value);
     }
 
     public static function update($id, $values)
     {
-        App::get('Providers')->update(static::$table, $id, $values);
+        App::get('database')->update(static::$table, $id, $values);
     }
 
     public static function delete($id)
     {
-        App::get('Providers')->delete(static::$table, $id);
+        App::get('database')->delete(static::$table, $id);
     }
 }

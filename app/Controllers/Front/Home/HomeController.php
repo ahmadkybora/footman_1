@@ -15,12 +15,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $users = User::create([
+/*        $users = User::create([
             'username' => 'ahmad',
             'first_name' => 'ahmad',
             'last_name' => 'montazeri',
-        ]);
-        var_dump($users);
+        ]);*/
+        $users = User::all();
+        dd($users);
         /*return view('front/home/index');*/
     }
 }

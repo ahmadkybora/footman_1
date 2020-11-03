@@ -5,7 +5,15 @@
 use Philo\Blade\Blade;
 use App\Providers\Session;
 
-if(!function_exists('view'))
+if (!function_exists('view')) {
+    function view($view, $data = [])
+    {
+        extract($data);
+        require_once __DIR__ . "/../../resources/views/{$view}.blade.php";
+    }
+}
+
+if(!function_exists('views'))
 {
     /**
      * this method for make view in directory resources
@@ -13,7 +21,7 @@ if(!function_exists('view'))
      * @param $path
      * @param array $data
      */
-    function view($path, array $data = [])
+    function views($path, array $data = [])
     {
         $view = __DIR__ . '/../../resources/views';
         $catch = __DIR__ . '/../../bootstrap/cache';
@@ -68,7 +76,9 @@ if(! function_exists('dd'))
     function dd(...$vars)
     {
         foreach ($vars as $v) {
+            echo '<h1 style="background-color: gray; width: 400px; height: 1000px; color: black"><pre>';
             var_dump($v);
+            echo '</pre></h1>';
         }
 
         exit(1);
