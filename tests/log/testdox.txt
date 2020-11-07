@@ -1,0 +1,5 @@
+Email
+ [x] Can be created from valid email address
+ [x] Cannot be created from invalid email address
+ [x] Can be used as string
+

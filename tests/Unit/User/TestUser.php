@@ -4,7 +4,9 @@
  */
 namespace Tests\Unit\User;
 
-class TestUser extends \TestCase
+use PHPUnit\Framework\TestCase;
+
+class TestUser extends TestCase
 {
     public function testRegister()
     {
