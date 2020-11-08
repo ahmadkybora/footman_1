@@ -6,21 +6,17 @@
  * Created At: 11/08/2020 01:32 PM by ahmad montazeri
  * Modified At:.
  *
- * this class for testing User
+ * this class for testing app
  */
-namespace Tests\Unit\User;
+namespace Tests;
 
 use PHPUnit\Framework\TestCase;
+use Tests\Unit\User\TestUser;
 
-class TestUser extends TestCase
+class ExampleTest extends TestCase
 {
     public function __construct()
     {
-        $this->testRegister();
-    }
-
-    public function testRegister()
-    {
-        $this->assertTrue(true);
+        TestUser::class;
     }
 }

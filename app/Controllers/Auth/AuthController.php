@@ -30,13 +30,14 @@ class AuthController extends Controller
         return view('auth/register');
     }
 
-    public function register()
+    public function register($a, $b)
     {
-
+        if($a > $b)
+         return $c = $a + $b;
     }
 
     public function logout()
     {
-
+        //
     }
 }
