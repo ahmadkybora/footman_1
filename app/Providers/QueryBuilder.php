@@ -9,13 +9,14 @@
  */
 
 namespace App\Providers;
+use App\Providers\Database;
 
-class QueryBuilder extends Provider
+class QueryBuilder extends Database
 {
-    protected $pdo;
-    public function __construct($pdo)
+    private $pdo;
+    public function __construct()
     {
-        $this->pdo = $pdo;
+        $this->pdo = new Database();
     }
 
     /**
@@ -138,3 +139,7 @@ class QueryBuilder extends Provider
         $stmt->execute();
     }
 }
+
+//$database = new Database;
+//$db = new QueryBuilder(new Database());
+//dd($db);

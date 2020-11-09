@@ -17,6 +17,7 @@ return array(
     'App\\Providers\\CSRFToken' => $baseDir . '/app/Providers/CSRFToken.php',
     'App\\Providers\\Collection' => $baseDir . '/app/Providers/Collection.php',
     'App\\Providers\\Connection' => $baseDir . '/app/Providers/Connection.php',
+    'App\\Providers\\Database' => $baseDir . '/app/Providers/Database.php',
     'App\\Providers\\Middleware' => $baseDir . '/app/Providers/Middleware.php',
     'App\\Providers\\Provider' => $baseDir . '/app/Providers/Provider.php',
     'App\\Providers\\QueryBuilder' => $baseDir . '/app/Providers/QueryBuilder.php',
@@ -1739,6 +1740,7 @@ return array(
     'phpDocumentor\\Reflection\\Types\\This' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/This.php',
     'phpDocumentor\\Reflection\\Types\\Void_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Void_.php',
     'phpDocumentor\\Reflection\\Utils' => $vendorDir . '/phpdocumentor/reflection-docblock/src/Utils.php',
+    'src\\PigLatin' => $baseDir . '/src/PigLatin.php',
     'voku\\helper\\Paginator' => $vendorDir . '/voku/pagination/src/voku/helper/Paginator.php',
     'voku\\helper\\PaginatorHelper' => $vendorDir . '/voku/pagination/src/voku/helper/PaginatorHelper.php',
 );

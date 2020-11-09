@@ -5,13 +5,15 @@
 namespace App\Repositories;
 
 use App\Models\Model;
+use App\Providers\QueryBuilder;
 
 class UserRepository implements Repository
 {
-    protected $model;
-    public function __construct(Model $model)
+    private $model;
+    public function __construct(QueryBuilder $db)
     {
-        $this->model = $model;
+        $this->model = $db;
+        return $this;
     }
 
     public function all()
@@ -39,3 +41,6 @@ class UserRepository implements Repository
         return $this->model->destroy();
     }
 }
+$model = new Model();
+$user = new UserRepository($model);
+//$user = new UserRepository(new Model);

@@ -2,9 +2,11 @@
 namespace App\Models;
 
 use App\Providers\App;
+use App\Providers\QueryBuilder;
+
 //use App\Providers\Request;
 
-class Model
+class Model extends QueryBuilder
 {
 //    protected $request;
     protected static $table;
@@ -16,31 +18,31 @@ class Model
 
     public static function all()
     {
-        return App::get('database')->selectAll(static::$table);
+        return parent::selectAll(static::$table);
     }
 
     public static function create($values)
     {
-        App::get('database')->insert(static::$table, $values);
+        parent::insert(static::$table, $values);
     }
 
-    public static function find($id)
-    {
-        return App::get('database')->find(static::$table, $id);
-    }
-
-    public static function where($key, $value)
-    {
-        return App::get('database')->where(static::$table, $key, $value);
-    }
-
-    public static function update($id, $values)
-    {
-        App::get('database')->update(static::$table, $id, $values);
-    }
-
-    public static function delete($id)
-    {
-        App::get('database')->delete(static::$table, $id);
-    }
+//    public static function find($id)
+//    {
+//        return parent::find(static::$table, $id);
+//    }
+//
+//    public static function where($key, $value)
+//    {
+//        return parent::where(static::$table, $key, $value);
+//    }
+//
+//    public static function update($id, $values)
+//    {
+//        parent::update(static::$table, $id, $values);
+//    }
+//
+//    public static function delete($id)
+//    {
+//        parent::delete(static::$table, $id);
+//    }
 }

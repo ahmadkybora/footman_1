@@ -381,6 +381,7 @@ class ComposerStaticInitcddb611234dfd56391979727daced1b6
         'App\\Providers\\CSRFToken' => __DIR__ . '/../..' . '/app/Providers/CSRFToken.php',
         'App\\Providers\\Collection' => __DIR__ . '/../..' . '/app/Providers/Collection.php',
         'App\\Providers\\Connection' => __DIR__ . '/../..' . '/app/Providers/Connection.php',
+        'App\\Providers\\Database' => __DIR__ . '/../..' . '/app/Providers/Database.php',
         'App\\Providers\\Middleware' => __DIR__ . '/../..' . '/app/Providers/Middleware.php',
         'App\\Providers\\Provider' => __DIR__ . '/../..' . '/app/Providers/Provider.php',
         'App\\Providers\\QueryBuilder' => __DIR__ . '/../..' . '/app/Providers/QueryBuilder.php',
@@ -2103,6 +2104,7 @@ class ComposerStaticInitcddb611234dfd56391979727daced1b6
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
         'phpDocumentor\\Reflection\\Utils' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/Utils.php',
+        'src\\PigLatin' => __DIR__ . '/../..' . '/src/PigLatin.php',
         'voku\\helper\\Paginator' => __DIR__ . '/..' . '/voku/pagination/src/voku/helper/Paginator.php',
         'voku\\helper\\PaginatorHelper' => __DIR__ . '/..' . '/voku/pagination/src/voku/helper/PaginatorHelper.php',
     );
