@@ -12,11 +12,9 @@ class Database
     {
         try {
             return new \PDO(
-                getenv('DB_DRIVER'), // DB_DRIVER
-                getenv('DB_HOST'), // DB_HOST
-                getenv('DB_NAME'), // DB_NAME
-                getenv('DB_USERNAME'), // DB_USERNAME
-                getenv('DB_PASSWORD') // DB_PASSWORD
+                getenv('DB_DRIVER') . getenv('DB_HOST') . getenv('DB_NAME'),
+                getenv('DB_USERNAME'),
+                getenv('DB_PASSWORD')
             );
         } catch (\Exception $e) {
             dd($e->getMessage());

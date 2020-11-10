@@ -1,20 +1,11 @@
 <?php
 namespace App\Models;
 
-use App\Providers\App;
-use App\Providers\QueryBuilder;
+use App\Providers\EloquentBuilder;
 
-//use App\Providers\Request;
-
-class Model extends QueryBuilder
+class Model extends EloquentBuilder
 {
-//    protected $request;
-    protected static $table;
-
-//    public function __construct(Request $request)
-//    {
-//        $this->request = $request;
-//    }
+    protected static $table = 'users';
 
     public static function all()
     {
@@ -28,21 +19,21 @@ class Model extends QueryBuilder
 
 //    public static function find($id)
 //    {
-//        return parent::find(static::$table, $id);
+//        return static::find(static::$table, $id);
 //    }
 //
 //    public static function where($key, $value)
 //    {
-//        return parent::where(static::$table, $key, $value);
+//        return static::where(static::$table, $key, $value);
 //    }
 //
 //    public static function update($id, $values)
 //    {
-//        parent::update(static::$table, $id, $values);
+//        static::update(static::$table, $id, $values);
 //    }
 //
 //    public static function delete($id)
 //    {
-//        parent::delete(static::$table, $id);
+//        static::delete(static::$table, $id);
 //    }
 }

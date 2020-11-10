@@ -10,12 +10,12 @@
 
 namespace App\Providers;
 
-class QueryBuilder extends Database
+class EloquentBuilder extends Database
 {
-    private $pdo;
+    private static $pdo;
     public function __construct()
     {
-        $this->pdo = new Database();
+        self::$pdo = new Database();
     }
 
     /**
@@ -25,13 +25,13 @@ class QueryBuilder extends Database
      * Modified At:.
      *
      * this method for select all from table
-     * 
+     *
      * @param $table
      * @return mixed
      */
     public function selectAll($table)
     {
-        $stmt = $this->pdo->prepare("SELECT * FROM {$table}");
+        $stmt = self::$pdo->prepare("SELECT * FROM {$table}");
         $stmt->execute();
         return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
@@ -82,7 +82,7 @@ class QueryBuilder extends Database
      * Modified At:.
      *
      * this method for find id
-     * 
+     *
      * @param $table
      * @param $id
      * @return mixed
@@ -126,7 +126,7 @@ class QueryBuilder extends Database
      * Modified At:.
      *
      * this method for conditional to database
-     * 
+     *
      * @param $table
      * @param $key
      * @param $value

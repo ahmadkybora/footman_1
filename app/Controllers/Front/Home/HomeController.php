@@ -7,7 +7,7 @@ namespace App\Controllers\Front\Home;
 
 use App\Controllers\Controller;
 use App\Models\User;
-use App\Repositories\UserRepository;
+//use App\Repositories\UserRepository;
 
 class HomeController extends Controller
 {
@@ -21,8 +21,7 @@ class HomeController extends Controller
             'first_name' => 'ahmad',
             'last_name' => 'montazeri',
         ]);*/
-        $users = new UserRepository();
-        $users->all();
+        $users = User::all();
         dd($users);
         /*return view('front/home/index');*/
     }
